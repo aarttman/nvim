@@ -22,4 +22,3 @@ vim.keymap.set("v", "<leader>Y", "\"+yy", {desc = "Copy the entire line"})
 --- Editor Remaps ---
 
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>", {desc = "Clear highlighted search"})
-vim.keymap.set("v", "<Esc>", "<cmd>nohlsearch<CR>", {desc = "Clear highlighted search"})
