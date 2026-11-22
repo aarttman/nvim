@@ -15,7 +15,7 @@ vim.opt.smartindent = true
 
 --- Searching ---
 
-vim.opt.hlsearch = true
+vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
 vim.opt.ignorecase = true
