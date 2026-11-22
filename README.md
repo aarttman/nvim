@@ -42,5 +42,6 @@ Make sure to do ```:checkhealth lazy``` to see if it produces any errors.
 ### Others
 
 6. [nvim-autopairs](https://github.com/windwp/nvim-autopairs) -> autopair brackets (), [], {}.
-7. [nordic.nvim](https://github.com/AlexvZyl/nordic.nvim) -> colorscheme.
-8. [nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons) -> [Nerd Font](https://www.nerdfonts.com/) icons.
+7. [nordic.nvim](https://github.com/AlexvZyl/nordic.nvim) -> nordic colorscheme.
+8. [everforest](https://github.com/sainnhe/everforest) -> everforest colorscheme.
+9. [nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons) -> [Nerd Font](https://www.nerdfonts.com/) icons.

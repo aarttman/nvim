@@ -1,38 +1,20 @@
 return {
-    'AlexvZyl/nordic.nvim',
-    lazy = false,
-    priority = 1000,
-    config = function()
-        require('nordic').setup({
-            transparent = {
-                bg = true,
-                float = true,
-            },
-            
-        on_highlight = function(highlights)
-            highlights.SignColumn = {
-                bg = 'none',
-            }
+    {
+        'AlexvZyl/nordic.nvim',
+    },
 
-            highlights.SignColumnNC = {
-                bg = 'none',
-            }
+    {
+      'sainnhe/everforest',
+      lazy = false,
+      priority = 1000,
+      config = function()
+        -- Optionally configure and load the colorscheme
+        -- directly inside the plugin declaration.
+        vim.g.everforest_enable_italic = true
+        vim.g.everforest_transparent_background = 2
 
-            highlights.CursorLineSign = {
-                bg = 'none',
-            }
-            end,
-        })
+        vim.cmd.colorscheme('everforest')
 
-        require('nordic').load()
-
-        ---vim.api.nvim_set_hl(0, "Normal", {bg = "none"})
-        ---vim.api.nvim_set_hl(0, "NormalFloat", {bg = "none"})
-
-
-
-        vim.api.nvim_set_hl(0, "SignColumn", {bg = "none"})
-        vim.api.nvim_set_hl(0, "SignColumnNC", {bg = "none"})
-
-    end,
+      end
+    }
 }
