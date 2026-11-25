@@ -29,7 +29,7 @@ return {
             "hrsh7th/cmp-nvim-lsp",
             "hrsh7th/cmp-buffer",
             "hrsh7th/cmp-path",
-
+            "hrsh7th/cmp-cmdline",
             -- Snippets
             "L3MON4D3/LuaSnip",
             "saadparwaiz1/cmp_luasnip",
@@ -95,6 +95,28 @@ return {
                             fallback()
                         end
                     end, { "i", "s" }),
+
+                    -- `:` cmdline setup  (nvim-cmp-cmdline)
+                    cmp.setup.cmdline(':', {
+                    mapping = cmp.mapping.preset.cmdline(),
+                    sources = cmp.config.sources({
+                        { name = 'path' }
+                        }, {
+                                {
+                                name = 'cmdline',
+                                option = {
+                                    ignore_cmds = { 'Man', '!' }
+                                }
+                            }
+                        })
+                    }),
+                    -- `/` cmdline setup (nvim-cmp-cmdline)
+                    cmp.setup.cmdline('/', {
+                        mapping = cmp.mapping.preset.cmdline(),
+                        sources = {
+                            { name = 'buffer' }
+                        }
+                    })
 
                 }),
 
