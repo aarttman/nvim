@@ -5,7 +5,7 @@ return {
 
     config = function()
         require('nvim-treesitter').install({
-            'rust', 
+            'rust',
             'java',
             'zig',
             'c',
