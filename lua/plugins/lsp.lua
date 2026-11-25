@@ -96,29 +96,31 @@ return {
                         end
                     end, { "i", "s" }),
 
-                    -- `:` cmdline setup  (nvim-cmp-cmdline)
-                    cmp.setup.cmdline(':', {
-                    mapping = cmp.mapping.preset.cmdline(),
-                    sources = cmp.config.sources({
-                        { name = 'path' }
-                        }, {
-                                {
-                                name = 'cmdline',
-                                option = {
-                                    ignore_cmds = { 'Man', '!' }
-                                }
-                            }
-                        })
-                    }),
-                    -- `/` cmdline setup (nvim-cmp-cmdline)
-                    cmp.setup.cmdline('/', {
-                        mapping = cmp.mapping.preset.cmdline(),
-                        sources = {
-                            { name = 'buffer' }
-                        }
-                    })
 
                 }),
+                -- `:` cmdline setup  (nvim-cmp-cmdline)
+                cmp.setup.cmdline(':', {
+                mapping = cmp.mapping.preset.cmdline(),
+                sources = cmp.config.sources({
+                    { name = 'path' }
+                    }, {
+                            {
+                            name = 'cmdline',
+                            option = {
+                                ignore_cmds = { 'Man', '!' }
+                            }
+                        }
+                    })
+                    }),
+                
+                --[[`/` cmdline setup (nvim-cmp-cmdline)
+                cmp.setup.cmdline('/', {
+                    mapping = cmp.mapping.preset.cmdline(),
+                    sources = {
+                        { name = 'buffer' }
+                    }
+                }),
+                ]]
 
                 sources = cmp.config.sources({
                     { name = "nvim_lsp" },
