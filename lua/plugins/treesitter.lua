@@ -16,7 +16,10 @@ return {
             'python',
             'markdown',
             'bash',
-            'vim'
+            'vim',
+            'bash',
+            'vimdoc',
+            'lua',
         })
     end,
 }

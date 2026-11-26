@@ -112,7 +112,7 @@ return {
                         }
                     })
                     }),
-                
+
                 --[[`/` cmdline setup (nvim-cmp-cmdline)
                 cmp.setup.cmdline('/', {
                     mapping = cmp.mapping.preset.cmdline(),
