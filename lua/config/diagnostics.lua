@@ -1,4 +1,4 @@
-vim.diagnostic.config({
+--[[vim.diagnostic.config({
     virtual_text = true,
     signs = true,
     underline = true,
@@ -7,4 +7,17 @@ vim.diagnostic.config({
         border = "rounded",
         source = true,
     },
+})]]
+
+vim.diagnostic.config ({
+    opts = {
+        virtual_lines = true;
+        signs = true;
+        underline = true;
+
+        float = {
+            border = "squared",
+            source = true
+        }
+    }
 })
